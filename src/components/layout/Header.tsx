@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Car, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.jpg";
 
 const navigation = [
   { name: "Accueil", href: "/" },
@@ -23,12 +22,12 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8" aria-label="Navigation principale">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src={logo} 
-              alt="Formacity - Vers le succès" 
-              className="h-12 w-auto object-contain"
-            />
+          <Link to="/" className="flex items-center gap-2 group">
+            <Car className="h-8 w-8 text-primary" />
+            <span className="text-xl font-bold tracking-tight">
+              <span className="text-foreground">LWESS</span>
+              <span className="text-primary"> PRODUCTION</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
