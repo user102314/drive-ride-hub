@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Twitter, Car } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -36,15 +35,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand & Contact */}
           <div className="lg:col-span-1">
-            <Link to="/" className="inline-block mb-6">
-              <img 
-                src={logo} 
-                alt="Formacity" 
-                className="h-12 w-auto object-contain"
-              />
+            <Link to="/" className="inline-flex items-center gap-2 mb-6">
+              <Car className="h-8 w-8 text-primary" />
+              <span className="text-xl font-bold tracking-tight">
+                <span className="text-foreground">LWESS</span>
+                <span className="text-primary"> PRODUCTION</span>
+              </span>
             </Link>
             <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-              Votre partenaire de confiance pour l'achat et la location de véhicules premium.
+              LWESS Production, votre partenaire de confiance pour l'achat et la location de véhicules premium.
             </p>
             <div className="space-y-3">
               <a 
@@ -55,11 +54,11 @@ export function Footer() {
                 +33 1 23 45 67 89
               </a>
               <a 
-                href="mailto:contact@formacity.fr" 
+                href="mailto:contact@lwessproduction.fr" 
                 className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-4 w-4 text-primary" />
-                contact@formacity.fr
+                contact@lwessproduction.fr
               </a>
               <div className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
@@ -137,7 +136,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Formacity. Tous droits réservés.
+              © {new Date().getFullYear()} LWESS Production. Tous droits réservés.
             </p>
             <p className="text-sm text-muted-foreground">
               Towards Success 🚀

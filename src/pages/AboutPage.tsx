@@ -1,6 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
-import { Award, Users, Target, Heart, Clock, TrendingUp } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import { Award, Users, Target, Heart, Clock, TrendingUp, Car } from "lucide-react";
 
 const values = [
   {
@@ -43,14 +42,16 @@ const AboutPage = () => {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <img 
-              src={logo} 
-              alt="Formacity" 
-              className="h-20 w-auto mx-auto mb-8"
-            />
+            <div className="inline-flex items-center gap-3 mb-8">
+              <Car className="h-16 w-16 text-primary" />
+              <span className="text-3xl font-bold tracking-tight">
+                <span className="text-foreground">LWESS</span>
+                <span className="text-primary"> PRODUCTION</span>
+              </span>
+            </div>
             
             <h1 className="heading-display text-4xl md:text-5xl lg:text-6xl mb-6">
-              À propos de <span className="text-gradient">Formacity</span>
+              À propos de <span className="text-gradient">LWESS Production</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -75,8 +76,8 @@ const AboutPage = () => {
               
               <div className="space-y-6 text-muted-foreground leading-relaxed">
                 <p>
-                  Formacity est née d'une passion commune pour l'automobile et d'une volonté 
-                  de proposer une expérience d'achat différente. Fondée en 2009 à Paris, 
+                  LWESS Production est née d'une passion commune pour l'automobile et d'une volonté 
+                  de proposer une expérience d'achat différente. Fondée en 2009, 
                   notre entreprise s'est construite sur des valeurs simples : transparence, 
                   qualité et service.
                 </p>
@@ -87,7 +88,7 @@ const AboutPage = () => {
                   de plus de 100 points.
                 </p>
                 <p>
-                  Aujourd'hui, Formacity est devenu une référence dans le secteur de 
+                  Aujourd'hui, LWESS Production est devenu une référence dans le secteur de 
                   l'automobile d'occasion premium, avec plus de 500 véhicules vendus 
                   et un taux de satisfaction client de 98%.
                 </p>
@@ -160,7 +161,7 @@ const AboutPage = () => {
 
           <div className="max-w-3xl mx-auto">
             {[
-              { year: "2009", title: "Création de Formacity", description: "Ouverture de notre première concession à Paris" },
+              { year: "2009", title: "Création de LWESS Production", description: "Ouverture de notre première concession" },
               { year: "2015", title: "Expansion nationale", description: "Développement de notre réseau de partenaires dans toute la France" },
               { year: "2020", title: "Digitalisation", description: "Lancement de notre plateforme en ligne pour une expérience d'achat moderne" },
               { year: "2024", title: "500 véhicules vendus", description: "Un cap symbolique qui témoigne de la confiance de nos clients" }
